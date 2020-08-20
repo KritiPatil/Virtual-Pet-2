@@ -1,6 +1,6 @@
 class Food{
     constructor(x, y) {
-        this.image = loadImage("images/milk.png");
+        this.image = loadImage("img/1/milk.png");
         this.foodStock = null; 
         this.lastFed = null;
     }
@@ -17,6 +17,18 @@ class Food{
         if(this.foodStock > 0)  {
             this.foodStock = this.foodStock -1;
         }
+    }
+
+    Bedroom() {
+        background(bedroom, 550, 500);
+    }
+
+    Garden() {
+        background(garden, 550, 500);
+    }
+
+    Washroom() {
+        background(washroom, 550, 500);
     }
 
     display() {
@@ -38,5 +50,6 @@ class Food{
                 x=x+30;
            }
         }
+
       }
 };
